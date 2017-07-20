@@ -14,7 +14,7 @@ The framework has been created with the following goals in mind:
 - Fast Performace
 - Quick to pick up and fun to develop with
 - Works well with other libraries (GSAP, PIXI, ThreeJS, Vue, React)
-- Helps organize code and generates goilerplate code
+- Helps organize code and generates boilerplate code
 
 ## In The Wild
 
@@ -56,7 +56,7 @@ Here's an example of the JS file for a customizable Ghost button with mouse-over
 ```javascript
 require('./Button.scss');
 const SpookyEl = require('spooky-element');
-var yo = require('yo-yo');
+const yo = require('yo-yo');
 
 class GhostButton extends SpookyEl {
 
