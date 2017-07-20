@@ -31,7 +31,7 @@ Spooky Framework has been battle-tested on the following award-winning websites:
 
 Spooky Framework is put together using a few different modules, which can be used independently.
 
-- [spooky-element](https://github.com/maxtherocket/spooky-element) For creating, manipulating and organizing DOM elements.
+- [spooky-element](https://github.com/maxtherocket/spooky-element) For creating, manipulating, extending and organizing DOM elements.
 - [spooky-router](https://github.com/maxtherocket/spooky-router) For managing web site sections through routes.
 - [generator-spooky](https://github.com/maxtherocket/generator-spooky) A Yeoman generator to help speed up development and organize code. Generates boilerplate code for the initial project structure, sections and individual UI components. Which makes development extremenly fast :rocket:
 
