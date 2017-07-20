@@ -70,7 +70,7 @@ class GhostButton extends SpookyEl {
       hoverColor: '#fff'
     }, data);
 
-    // Create the DOM
+    // Create the DOM, inline
     this.view = yo`
     <div class="ui-ghost-button" style="color: ${data.color}; border-color: ${data.color};">
       <div class="button-bg" style="background-color: ${data.color}"></div>
@@ -99,5 +99,34 @@ class GhostButton extends SpookyEl {
 export default GhostButton;
 ```
 
+And the SCSS file
+
+```scss
+.ui-button {
+
+  padding: 10px 15px;
+  min-width: 200px;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+
+  .button-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .label {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+  }
+
+}
+```
 
 
