@@ -4,17 +4,17 @@
 
 Spooky Framework is a lightweight, modular, front-end development framework targeted at animation-driven websites. It is tailored to work with [GSAP](https://greensock.com/gsap) and can be easily used with [PIXI.js](http://www.pixijs.com/) and [three.js](https://threejs.org/).
 
-The name Spooky came from the initial reaction developers and producers had when they saw how quick and easy it was to build heavily-animated websites. It is spooky that something like this didn't exist already.
+The name Spooky came from the initial reaction developers and producers had when they saw how quick and easy it was to build heavily-animated websites. It is really spooky that something like this didn't exist already.
 
 ## :ghost: Goals
 
 The framework has been created with the following goals in mind:
 
-- Easy To Understand (Mostly vanilla Javascript with )
+- Easy to understand (Mostly vanilla JS using other popular, well-maintained modules)
 - Fast Performace
-- Quick to Develop With
-- Works Well With Other Libraries (GSAP, PIXI, ThreeJS, Vue, React)
-- Helps Organize Code and Generate Boilerplate Code
+- Quick to pick up and fun to develop with
+- Works well with other libraries (GSAP, PIXI, ThreeJS, Vue, React)
+- Helps organize code and generates goilerplate code
 
 ## In The Wild
 
@@ -29,7 +29,7 @@ Spooky Framework has been battle-tested on the following award-winning websites:
 
 ## Stucture
 
-Spooky Framework is put together using a number of different componenents, which can be used independently.
+Spooky Framework is put together using a few different modules, which can be used independently.
 
 - [spooky-element](https://github.com/maxtherocket/spooky-element) For creating, manipulating and organizing DOM elements.
 - [spooky-router](https://github.com/maxtherocket/spooky-router) For managing web site sections through routes.
@@ -51,7 +51,7 @@ When building out the HTML markup (which is conveniently placed inside the JS fi
 
 Each UI component and section is organized by the Spooky Generator into it's own folder with 2 files, a JS file and a SCSS style. The markup is placed inside the JS file using string literals (powered by [yo-yo](https://github.com/maxogden/yo-yo)) which makes it really easy to see all available DOM elements within the JS file.
 
-Here's an example of the JS file for a customizable Ghost button with mouse-over/mouse-out animation (using Javascript)
+Here's an example of the JS file for a customizable Ghost button with mouse-over/mouse-out animation
 
 ```javascript
 require('./Button.scss');
@@ -127,6 +127,14 @@ And the SCSS file
   }
 
 }
+```
+
+The button can be used like this:
+
+```javascript
+import GhostButton from '../ui/GhostButton/GhostButton';
+let button = new GhostButton({label:'SPOOKY', color:'#3297AC', backgroundColor:'#000', hoverColor:'#fff'});
+button.appendTo('.button-container');
 ```
 
 
