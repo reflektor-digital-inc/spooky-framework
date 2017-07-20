@@ -51,9 +51,10 @@ When building out the HTML markup (which is conveniently placed inside the JS fi
 
 Each UI component and section is organized by the Spooky Generator into it's own folder with 2 files, a JS file and a SCSS style. The markup is placed inside the JS file using string literals (powered by [yo-yo](https://github.com/maxogden/yo-yo)) which makes it really easy to see all available DOM elements within the JS file.
 
+Here's an example of the JS file for a customizable Ghost button with mouse-over/mouse-out animation (using Javascript)
+
 ```javascript
 require('./Button.scss');
-
 const SpookyEl = require('spooky-element');
 var yo = require('yo-yo');
 
